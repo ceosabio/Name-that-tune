@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title> Name That Tune </title>
+</head>
+
+<body>
+    <h1 id= "main title">NAME THAT TUNE</h1>
+
+<div class= "round1">
+    <div id= "round1"><h1>Round 1</h1></div>
+    <br>
+    <div class= "inner">
+        <div class= "hip-hop">
+            <h2>Hip-Hop Music</h2>
+            <!-- <p>click on the play button to listen to the audio clip and choose a a song from the pull down menu.  Press submit when your sure of your answer.</p> -->
+        
+            <audio
+            id="sean_paul"
+            controls
+            src="im_still_in_love_with_you.mp3">
+            Your browser does not support the <code>audio</code> element.
+            </audio>   
+
+            <h2>NAME THAT TUNE!</h2>
+            <form>
+                <input type="radio" name="" value=""> I'm still in love with you<br>
+                <input type="radio" name="" value=""> Ghetto red hot<br>
+                <input type="radio" name="" value=""> Half my age<br>
+            </form> 
+        <br>
+        <br>
+        <button>submit</button>
+    </div>
+
+    <div class= "country">
+        <h2>Country Music</h2>
+        <!-- <p>click on the play button to listen to the audio clip and choose a a song from the pull down menu.  Press submit when your sure of your answer.</p> -->
+        <!-- <audio id="country_audio">
+                <source src="i_like_it_i_love_it.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+              
+            <button onclick="playAudio()" type="button">Play Audio</button>
+            <button onclick="pauseAudio()" type="button">Pause Audio</button>  -->
+
+            <audio
+            id="tim_mcgraw"
+            controls
+            src="i_like_it_i_love_it.mp3">
+            Your browser does not support the <code>audio</code> element.
+            </audio>   
+              
+            <h2>NAME THAT TUNE!</h2>
+            <form>
+                <input type="radio" name="" value=""> I like it, I love it<br>
+                <input type="radio" name="" value=""> Forever and ever, amen<br>
+                <input type="radio" name="" value=""> Leaving on a jet plane<br>
+            </form> 
+        <br>
+        <br>
+        <button>submit</button>
+
+            <!-- <script>
+              let y1 = document.getElementById("country_audio"); 
+                function playAudio() { 
+                  y1.play(); 
+              } 
+                function pauseAudio() { 
+                  y1.pause(); 
+              } 
+            </script> -->
+   
+    </div>
+
+    <div class= "pop">
+        <h2>Pop Music</h2>
+        <!-- <p>click on the play button to listen to the audio clip and choose a a song from the pull down menu.  Press submit when your sure of your answer.</p> -->
+       
+        <audio
+        id="justin_bieber"
+        controls
+        src="sorry.mp3">
+        Your browser does not support the <code>audio</code> element.
+        </audio>   
+    
+        <h2>NAME THAT TUNE!</h2>
+        <form>
+            <input type="radio" name="" value=""> Sorry<br>
+            <input type="radio" name="" value=""> Cooler than me<br>
+            <input type="radio" name="" value=""> Perfect<br>
+        </form> 
+        <br>
+        <br>
+        <button>submit</button>
+
+    </div>
+
+    <!-- <audio
+    id="sean_paul"
+    controls
+    src="im_still_in_love_with_you.mp3">
+    Your browser does not support the <code>audio</code> element.
+    </audio> 
+    -->
+    </div>
+</div>
+</body>
+
+</html>

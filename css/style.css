@@ -1,0 +1,52 @@
+.round1 {
+        background-color: navy;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+}
+#round1 {
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        text-align: center;
+        
+}
+
+.inner {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+}
+
+.hip-hop {
+        margin: 20px;
+        width: 300px;
+        background-color: darkorange;
+        border-style: solid;
+        border-width: 10px;
+        border-color:whitesmoke;
+        text-align: left;
+        padding: 20px
+     }
+.country {
+        margin: 20px;
+        width: 300px;
+        background-color: darkorange;
+        border-style: solid;
+        border-width: 10px;
+        border-color:whitesmoke;
+        text-align: left;
+        padding: 20px
+}
+.pop {
+    margin: 20px;
+    width: 300px;
+    background-color: darkorange;
+    border-style: solid;
+    border-width: 10px;
+    border-color:whitesmoke;
+    text-align: left;
+    padding: 20px
+}
+p {
+    color: rebeccapurple;
+}
