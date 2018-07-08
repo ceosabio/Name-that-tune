@@ -40,19 +40,19 @@ var pop_questions = [{
     correctAnswer: "Thinking Out Loud"
 }];
 
-var questionCounter = 0;
-var selections= [];
-
-console.log(rap_questions[2].choices[1]);
+// console.log(rap_questions[2].choices[1]);
 
 var myButton = document.getElementById("rap_button").addEventListener ("click", function(){
     console.log("Say Word Son!");
+    console.log(rap_questions[2].choices[1]);
 });
 
 var myButton = document.getElementById("pop_button").addEventListener ("click", function(){
     console.log("Like, really?");
+    console.log(pop_questions[2].choices[1]);
 });
 
 var myButton = document.getElementById("country_button").addEventListener ("click", function(){
     console.log("Country Folk");
+    console.log(country_questions[2].choices[1]);
 });
