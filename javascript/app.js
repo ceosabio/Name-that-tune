@@ -42,17 +42,23 @@ var pop_questions = [{
 
 // console.log(rap_questions[2].choices[1]);
 
-var myButton = document.getElementById("rap_button").addEventListener ("click", function(){
-    console.log("Say Word Son!");
-    console.log(rap_questions[2].choices[1]);
+var myRapButton = document.getElementById("rap_button");
+
+myRapButton.addEventListener ("click", function(){
+    console.log(document.getElementById("rap_title"));
+    document.getElementById("rap_title").innerHTML = "Change is coming";
 });
 
-var myButton = document.getElementById("pop_button").addEventListener ("click", function(){
+var myPopButton = document.getElementById("pop_button")
+
+myPopButton.addEventListener ("click", function(){
     console.log("Like, really?");
     console.log(pop_questions[2].choices[1]);
 });
 
-var myButton = document.getElementById("country_button").addEventListener ("click", function(){
+var myCountryButton = document.getElementById("country_button")
+
+myCountryButton.addEventListener ("click", function(){
     console.log("Country Folk");
     console.log(country_questions[2].choices[1]);
 });
