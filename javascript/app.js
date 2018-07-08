@@ -44,3 +44,7 @@ var questionCounter = 0;
 var selections= [];
 
 console.log(rap_questions[2].choices[1]);
+
+var myButton = document.getElementById("button1").addEventListener ("click", function(){
+    console.log("yea mon");
+});
