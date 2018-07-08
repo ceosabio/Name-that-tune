@@ -24,8 +24,10 @@
         border-style: solid;
         border-width: 10px;
         border-color:whitesmoke;
+        border-radius: 5px;
         text-align: left;
-        padding: 20px
+        padding: 20px;
+        box-shadow: 5px 5px 5px #999;
      }
 .country {
         margin: 20px;
@@ -34,18 +36,22 @@
         border-style: solid;
         border-width: 10px;
         border-color:whitesmoke;
+        border-radius: 5px;
         text-align: left;
-        padding: 20px
+        padding: 20px;
+        box-shadow: 5px 5px 5px #999;
 }
 .pop {
-    margin: 20px;
-    width: 300px;
-    background-color: darkorange;
-    border-style: solid;
-    border-width: 10px;
-    border-color:whitesmoke;
-    text-align: left;
-    padding: 20px
+        margin: 20px;
+        width: 300px;
+        background-color: darkorange;
+        border-style: solid;
+        border-width: 10px;
+        border-color:whitesmoke;
+        border-radius: 5px;
+        text-align: left;
+        padding: 20px;
+        box-shadow: 5px 5px 5px #999;
 }
 p {
     color: rebeccapurple;
