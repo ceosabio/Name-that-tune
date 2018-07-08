@@ -45,6 +45,14 @@ var selections= [];
 
 console.log(rap_questions[2].choices[1]);
 
-var myButton = document.getElementById("button1").addEventListener ("click", function(){
-    console.log("yea mon");
+var myButton = document.getElementById("rap_button").addEventListener ("click", function(){
+    console.log("Say Word Son!");
+});
+
+var myButton = document.getElementById("pop_button").addEventListener ("click", function(){
+    console.log("Like, really?");
+});
+
+var myButton = document.getElementById("country_button").addEventListener ("click", function(){
+    console.log("Country Folk");
 });
