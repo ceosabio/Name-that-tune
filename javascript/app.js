@@ -42,4 +42,5 @@ var pop_questions = [{
 
 var questionCounter = 0;
 var selections= [];
-var 
+
+console.log(rap_questions[2].choices[1]);
