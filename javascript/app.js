@@ -39,3 +39,7 @@ var pop_questions = [{
     choices: ["Thinking Out Loud", "Hello", "When I Was Your Man"],
     correctAnswer: "Thinking Out Loud"
 }];
+
+var questionCounter = 0;
+var selections= [];
+var 
