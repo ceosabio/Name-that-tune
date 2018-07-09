@@ -40,13 +40,28 @@ var pop_questions = [{
     correctAnswer: "Thinking Out Loud"
 }];
 
-// console.log(rap_questions[2].choices[1]);
+// console.log(rap_questions[2].options[1]);
 
 // var myRapButton = document.getElementById("rap_button");
 
 var r_song_01 = document.getElementById("sean_paul");
 var r_title = document.getElementById("rap_title");
 var r_answers = document.getElementById("r_answers");
+
+function appInit() {
+    var song= document.getElementById("rap_audio");
+    song.setAttribute("src", "OPP.mp3");
+    var r_ans_01 = document.getElementById("answer_01_txt");
+    var r_ans_01_val = document.getElementById("answer_01");
+    var r_ans_02 = document.getElementById("answer_02_txt");
+    var r_ans_02 = document.getElementById("answer_02");
+    var r_ans_03 = document.getElementById("answer_03_txt");
+    var r_ans_03 = document.getElementById("answer_03");
+    r_ans_01.innerHTML= rap_questions[0].options[0];
+    r_ans_01_val.setAttribute("value", rap_questions[0].options[0]);
+}
+
+appInit();
 
 function setRapForm_01(){
     var song= document.getElementById("rap_audio");
@@ -60,7 +75,7 @@ function setRapForm_01(){
     
 }
 
-setRapForm_01();
+// setRapForm_01();
 
 function setRapForm_02(){
     var song= document.getElementById("sean_paul");
