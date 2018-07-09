@@ -51,13 +51,13 @@ var r_answers = document.getElementById("r_answers");
 
 
 
-myRapButton.addEventListener ("click", function(){
-    document.getElementsByName("rap_questions").setAttribute[(question[0], choices[0]),
-    (question[0], choices[1]),
-    (question[0], choices[2]),
-    document.getElementById("rap_title").innerHTML
-document.getElementsByName("rap_questions");
-});
+// myRapButton.addEventListener ("click", function(){
+//     document.getElementsByName("rap_questions").setAttribute[(question[0], choices[0]),
+//     (question[0], choices[1]),
+//     (question[0], choices[2]),
+//     document.getElementById("rap_title").innerHTML
+// document.getElementsByName("rap_questions");
+// });
 
 var myPopButton = document.getElementById("pop_button")
 
