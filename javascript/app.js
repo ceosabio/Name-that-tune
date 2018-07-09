@@ -49,12 +49,12 @@ var r_title = document.getElementById("rap_title");
 var r_answers = document.getElementById("r_answers");
 
 function setRapForm_01(){
-    let song= document.getElementById("sean_paul");
+    var song= document.getElementById("rap_audio");
     song.setAttribute("src", "OPP.mp3");
-    let radioInputs= document.querySelectorAll("#r_answers input");
+    var radioInputs= document.querySelectorAll("#r_answers input");
     radioInputs[0].value= "Franco";
-    let label = document.querySelectorAll("#r_answers label");
-    let span = label[0].querySelector("span");
+    var label = document.querySelectorAll("#r_answers label");
+    var span = label[0].querySelector("span");
     span.innerText= "Franco";
     // label[0].span[0].innerText= "Franco";
     
@@ -63,9 +63,9 @@ function setRapForm_01(){
 setRapForm_01();
 
 function setRapForm_02(){
-    let song= document.getElementById("sean_paul");
+    var song= document.getElementById("sean_paul");
     song.setAttribute("src", "OPP.mp3");
-    let radioInputs= document.querySelectorAll("#r_answers input");
+    var radioInputs= document.querySelectorAll("#r_answers input");
 }
 
 
