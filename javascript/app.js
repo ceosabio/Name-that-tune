@@ -1,5 +1,5 @@
 var rap_questions = [{
-    question: "name that tune",
+    song: src = "im_still_in_love_with_you.mp3",
     choices: ["all about the benjamins", "O.P.P", "C.R.E.A.M"],
     correctAnswer: "O.P.P." 
 }, {
@@ -42,11 +42,21 @@ var pop_questions = [{
 
 // console.log(rap_questions[2].choices[1]);
 
-var myRapButton = document.getElementById("rap_button");
+// var myRapButton = document.getElementById("rap_button");
+
+var r_song_01 = document.getElementById("sean_paul");
+var r_title = document.getElementById("rap_title");
+var r_answers = document.getElementById("r_answers");
+
+
+
 
 myRapButton.addEventListener ("click", function(){
-    console.log(document.getElementById("rap_title"));
-    document.getElementById("rap_title").innerHTML = "Change is coming";
+    document.getElementsByName("rap_questions").setAttribute[(question[0], choices[0]),
+    (question[0], choices[1]),
+    (question[0], choices[2]),
+    document.getElementById("rap_title").innerHTML
+document.getElementsByName("rap_questions");
 });
 
 var myPopButton = document.getElementById("pop_button")
