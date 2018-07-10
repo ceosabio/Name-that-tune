@@ -48,7 +48,7 @@ var myRapButton = document.getElementById("rap_button");
 var r_title = document.getElementById("rap_title");
 var r_answers = document.getElementById("r_answers");
 
-function appInit() {
+function r_appInit() {
     var song = document.getElementById("rap_audio");
     song.setAttribute("src", "OPP.mp3");
     var r_ans_01 = document.getElementById("answer_01_txt");
@@ -72,7 +72,33 @@ function appInit() {
     r_ans_03_val.setAttribute("value", rap_questions[0].options[2]);
 }
 
-appInit();
+r_appInit();
+
+function c_appInit() {
+    var song = document.getElementById("country_audio");
+    song.setAttribute("src", "i_like_it_i_love_it.mp3");
+    var c_ans_01 = document.getElementById("c_answer_01_txt");
+    var c_ans_01_val = document.getElementById("c_answer_01");
+        c_ans_01.innerHTML= country_questions[0].options[0];
+        c_ans_01_val.setAttribute("value", country_questions[0].options[0]);
+
+    var c_ans_02 = document.getElementById("c_answer_02_txt");
+    var c_ans_02_val = document.getElementById("c_answer_02");
+        c_ans_02.innerHTML = country_questions[0].options[1];
+        c_ans_01_val.setAttribute("value", country_questions[0].options[1]);
+
+    var c_ans_03 = document.getElementById("c_answer_03_txt"); 
+    var c_ans_03_val = document.getElementById("c_answer_03");
+        c_ans_03.innerHTML = country_questions[0].options[2];
+        c_ans_03_val.setAttribute("value", country_questions[0].options[2]);
+
+    c_ans_01.innerHTML= country_questions[0].options[0];
+    c_ans_01_val.setAttribute("value", country_questions[0].options[0]);
+    c_ans_02_val.setAttribute("value", country_questions[0].options[1]);
+    c_ans_03_val.setAttribute("value", country_questions[0].options[2]);
+}
+
+c_appInit();
 
 function setRapForm_01(){
     var song= document.getElementById("rap_audio");

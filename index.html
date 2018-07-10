@@ -45,25 +45,19 @@
 
     <div class= "country">
         <h2>Country Music</h2>
-        <!-- <p>click on the play button to listen to the audio clip and choose a a song from the pull down menu.  Press submit when your sure of your answer.</p> -->
-        <!-- <audio id="country_audio">
-                <source src="i_like_it_i_love_it.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-              
-            <button onclick="playAudio()" type="button">Play Audio</button>
-            <button onclick="pauseAudio()" type="button">Pause Audio</button>  -->
-
             <audio
-            id="tim_mcgraw"
+            id="country_audio"
             controls
             src="i_like_it_i_love_it.mp3">
             Your browser does not support the <code>audio</code> element.
             </audio>   
-              
-            <h2>NAME THAT TUNE!</h2>
-            <form>
-                <input type="radio" name="country" value=""> I like it, I love it<br>
+            
+            <form id="c_answers">
+                <input type="radio" name="c_answer_01" id="c_answer_01" value="c_answer_01" class="country_class">
+                <label for="c_answer_01">
+                <span id="c_answer_01_txt">test</span><br>
+                </label>
+
                 <input type="radio" name="country" value=""> Forever and ever, amen<br>
                 <input type="radio" name="country" value=""> Leaving on a jet plane<br>
             </form> 
