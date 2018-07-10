@@ -43,8 +43,6 @@ var pop_questions = [{
 // console.log(rap_questions[2].options[1]);
 
 var myRapButton = document.getElementById("rap_button");
-
-// var r_song_01 = document.getElementById("sean_paul");
 var r_title = document.getElementById("rap_title");
 var r_answers = document.getElementById("r_answers");
 
@@ -71,8 +69,12 @@ function r_appInit() {
     r_ans_02_val.setAttribute("value", rap_questions[0].options[1]);
     r_ans_03_val.setAttribute("value", rap_questions[0].options[2]);
 }
-
 r_appInit();
+
+
+var myCountryButton = document.getElementById("country_button");
+var c_title = document.getElementById("country_title");
+var c_answers = document.getElementById("c_answers");
 
 function c_appInit() {
     var song = document.getElementById("country_audio");
@@ -85,7 +87,7 @@ function c_appInit() {
     var c_ans_02 = document.getElementById("c_answer_02_txt");
     var c_ans_02_val = document.getElementById("c_answer_02");
         c_ans_02.innerHTML = country_questions[0].options[1];
-        c_ans_01_val.setAttribute("value", country_questions[0].options[1]);
+        c_ans_02_val.setAttribute("value", country_questions[0].options[1]);
 
     var c_ans_03 = document.getElementById("c_answer_03_txt"); 
     var c_ans_03_val = document.getElementById("c_answer_03");
@@ -97,47 +99,73 @@ function c_appInit() {
     c_ans_02_val.setAttribute("value", country_questions[0].options[1]);
     c_ans_03_val.setAttribute("value", country_questions[0].options[2]);
 }
-
 c_appInit();
 
-function setRapForm_01(){
-    var song= document.getElementById("rap_audio");
-    song.setAttribute("src", "OPP.mp3");
-    var radioInputs= document.querySelectorAll("#r_answers input");
-    radioInputs[0].value= "Franco";
-    var label = document.querySelectorAll("#r_answers label");
-    var span = label[0].querySelector("span");
-    span.innerText= "Franco";
-    // label[0].span[0].innerText= "Franco";
-    
+var popButton = document.getElementById("pop_button");
+var p_title = document.getElementById("pop_title");
+var p_answers = document.getElementById("p_answers");
+
+function p_appInit() {
+    var song = document.getElementById("pop_audio");
+    song.setAttribute("src", "sorry.mp3");
+    var p_ans_01 = document.getElementById("p_answer_01_txt");
+    var p_ans_01_val = document.getElementById("p_answer_01");
+        p_ans_01.innerHTML= pop_questions[0].options[0];
+        p_ans_01_val.setAttribute("value", pop_questions[0].options[0]);
+
+    var p_ans_02 = document.getElementById("p_answer_02_txt");
+    var p_ans_02_val = document.getElementById("p_answer_02");
+        p_ans_02.innerHTML = pop_questions[0].options[1];
+        p_ans_02_val.setAttribute("value", pop_questions[0].options[1]);
+
+    var p_ans_03 = document.getElementById("p_answer_03_txt"); 
+    var p_ans_03_val = document.getElementById("p_answer_03");
+        p_ans_03.innerHTML = pop_questions[0].options[2];
+        p_ans_03_val.setAttribute("value", country_questions[0].options[2]);
+
+    p_ans_01.innerHTML= pop_questions[0].options[0];
+    p_ans_01_val.setAttribute("value", pop_questions[0].options[0]);
+    p_ans_02_val.setAttribute("value", pop_questions[0].options[1]);
+    p_ans_03_val.setAttribute("value", pop_questions[0].options[2]);
 }
+p_appInit();
+
+// function setRapForm_01(){
+//     var song= document.getElementById("rap_audio");
+//     song.setAttribute("src", "OPP.mp3");
+//     var radioInputs= document.querySelectorAll("#r_answers input");
+//     radioInputs[0].value= "Franco";
+//     var label = document.querySelectorAll("#r_answers label");
+//     var span = label[0].querySelector("span");
+//     span.innerText= "Franco";
+//     // label[0].span[0].innerText= "Franco";
+// }
 
 // setRapForm_01();
 
-function setRapForm_02(){
-    var song= document.getElementById("sean_paul");
-    song.setAttribute("src", "OPP.mp3");
-    var radioInputs= document.querySelectorAll("#r_answers input");
-}
+// function setRapForm_02(){
+//     var song= document.getElementById("sean_paul");
+//     song.setAttribute("src", "OPP.mp3");
+//     var radioInputs= document.querySelectorAll("#r_answers input");
+// }
 
-
-myRapButton.addEventListener ("click", function(event){
-    event.preventDefault();
+// myRapButton.addEventListener ("click", function(event){
+//     event.preventDefault();
 //     document.getElementsByName("rap_questions").setAttribute[(question[0], choices[0]),
 //     (question[0], options[1]),
 //     (question[0], options[2]),
 //     document.getElementById("rap_title").innerHTML
 // document.getElementsByName("rap_questions");
-var rap_options = document.getElementsByClassName("hiphop");
+// var rap_options = document.getElementsByClassName("hiphop");
     // console.log(rap_options);
     // console.log(rap_options[0].checked);
-for(i = 0; i < rap_options.length; i += 1){
-    console.log(rap_options[i].value);
-if (rap_options[i].value === "O.P.P" && rap_options[i].checked){
-    console.log("correct");
-}
-}
-});
+// for(i = 0; i < rap_options.length; i += 1){
+//     console.log(rap_options[i].value);
+// if (rap_options[i].value === "O.P.P" && rap_options[i].checked){
+//     console.log("correct");
+// }
+// }
+// });
 
 
 
@@ -149,9 +177,9 @@ myPopButton.addEventListener ("click", function(event){
     console.log(pop_questions[2].options[1]);
 });
 
-// var myCountryButton = document.getElementById("country_button");
+var myCountryButton = document.getElementById("country_button");
 
-// myCountryButton.addEventListener ("click", function(){
-//     console.log("Country Folk");
-//     console.log(country_questions[2].choices[1]);
-// });
+myCountryButton.addEventListener ("click", function(){
+    console.log("Country Folk");
+    console.log(country_questions[2].choices[1]);
+});

@@ -44,7 +44,7 @@
     </div>
 
     <div class= "country">
-        <h2>Country Music</h2>
+        <h2 id="country_title">Country Music</h2>
             <audio
             id="country_audio"
             controls
@@ -58,38 +58,34 @@
                 <span id="c_answer_01_txt">test</span><br>
                 </label>
 
-                <input type="radio" name="country" value=""> Forever and ever, amen<br>
-                <input type="radio" name="country" value=""> Leaving on a jet plane<br>
+                <input type="radio" name="c_answer_02" id="c_answer_02" value="c_answer_02" class="country_class">
+                <label for="c_answer_02">
+                <span id="c_answer_02_txt">test</span><br>
+                </label> 
+
+                <input type="radio" name="c_answer_03"
+                id="c_answer_03" value="c_answer_03"
+                class="country_class">
+                <label for="c_answer_03">
+                <span id="c_answer_03_txt">test</span><br>
+                </label>
             </form> 
         <br>
         <br>
-        <button id= "country_button">submit</button>
-
-            <!-- <script>
-              let y1 = document.getElementById("country_audio"); 
-                function playAudio() { 
-                  y1.play(); 
-              } 
-                function pauseAudio() { 
-                  y1.pause(); 
-              } 
-            </script> -->
-   
+        <button id= "country_button">submit</button>   
     </div>
 
+
     <div class= "pop">
-        <h2>Pop Music</h2>
-        <!-- <p>click on the play button to listen to the audio clip and choose a a song from the pull down menu.  Press submit when your sure of your answer.</p> -->
-       
-        <audio
-        id="justin_bieber"
-        controls
-        src="sorry.mp3">
-        Your browser does not support the <code>audio</code> element.
-        </audio>   
+        <h2 id="pop_title">Pop Music</h2>
+            <audio
+            id="pop_audio"
+            controls
+            src="sorry.mp3">
+            Your browser does not support the <code>audio</code> element.
+             </audio>   
     
-        <h2>NAME THAT TUNE!</h2>
-        <form>
+            <form id="p_answers">
             <input type="radio" name="pop" value=""> Sorry<br>
             <input type="radio" name="pop" value=""> Cooler than me<br>
             <input type="radio" name="pop" value=""> Perfect<br>
@@ -98,18 +94,9 @@
         <br>
         <button id= "pop_button">submit</button>
     </div>
-
-    <!-- <audio
-    id="sean_paul"
-    controls
-    src="im_still_in_love_with_you.mp3">
-    Your browser does not support the <code>audio</code> element.
-    </audio> 
-    -->
     </div>
 </div>
 <script 
 type= "text/javascript" src= "javascript/app.js"></script>
 </body>
-
 </html>
