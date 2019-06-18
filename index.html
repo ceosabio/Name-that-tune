@@ -6,97 +6,28 @@
 </head>
 
 <body>
-    <h1 id= "main title">NAME THAT TUNE</h1>
+	<h1 id= "main title">NAME THAT TUNE</h1>
 
-<div class= "round1">
-    <div id= "round1"><h1>Round 1</h1></div>
-    <br>
-    <div class= "inner">
-        <div class= "hip-hop">
-            <h2>Hip-Hop Music</h2>
-            <audio
-            id="rap_audio"
-            controls
-            src="">
-            Your browser does not support the <code>audio</code> element.
-            </audio>   
+	<div id="genre_select">
+		<div class="genre">Country</div>
+		<div class="genre">Hip Hop</div>
+		<div class="genre">Pop</div>
+		<div class="genre">Random</div>
+	</div>
 
-            <h2 id="rap_title"></h2>
-            <form id="r_answers">
-                 <input type="radio" name="answer_01" 
-                 id="answer_01" value="answer_01" class="hiphop">
-            <label for="answer_01">
-                <span id="answer_01_txt">test</span><br>
-            </label>
-                <input type="radio" name="answer_02"
-                id="answer_02" value="answer_02" class="hiphop">
-            <label for="answer_02">
-                <span id="answer_02_txt">test2</span><br>
-            </label>
-                <input type="radio" name="answer_03"
-                id="answer_03" value="answer_03" class="hiphop">
-            <label for="answer_03">
-                <span id="answer_03_txt">test3</span><br>
-            </form> 
-        <br>
-        <br>
-        <button id= "rap_button">submit</button>
+  <div id="song_card">
+  	<audio id="song_audio" controls src="">
+      Your browser does not support the <code>audio</code> element. 
+    </audio>
+    <div id="choices">
+    	<div class="song_option"></div>
+    	<div class="song_option"></div>
+    	<div class="song_option"></div>
+    	<div class="song_option"></div>
     </div>
-
-    <div class= "country">
-        <h2 id="country_title">Country Music</h2>
-            <audio
-            id="country_audio"
-            controls
-            src="i_like_it_i_love_it.mp3">
-            Your browser does not support the <code>audio</code> element.
-            </audio>   
-            
-            <form id="c_answers">
-                <input type="radio" name="c_answer_01" id="c_answer_01" value="c_answer_01" class="country_class">
-                <label for="c_answer_01">
-                <span id="c_answer_01_txt">test</span><br>
-                </label>
-
-                <input type="radio" name="c_answer_02" id="c_answer_02" value="c_answer_02" class="country_class">
-                <label for="c_answer_02">
-                <span id="c_answer_02_txt">test</span><br>
-                </label> 
-
-                <input type="radio" name="c_answer_03"
-                id="c_answer_03" value="c_answer_03"
-                class="country_class">
-                <label for="c_answer_03">
-                <span id="c_answer_03_txt">test</span><br>
-                </label>
-            </form> 
-        <br>
-        <br>
-        <button id= "country_button">submit</button>   
-    </div>
-
-
-    <div class= "pop">
-        <h2 id="pop_title">Pop Music</h2>
-            <audio
-            id="pop_audio"
-            controls
-            src="sorry.mp3">
-            Your browser does not support the <code>audio</code> element.
-             </audio>   
-    
-            <form id="p_answers">
-            <input type="radio" name="pop" value=""> Sorry<br>
-            <input type="radio" name="pop" value=""> Cooler than me<br>
-            <input type="radio" name="pop" value=""> Perfect<br>
-        </form> 
-        <br>
-        <br>
-        <button id= "pop_button">submit</button>
-    </div>
-    </div>
-</div>
-<script 
-type= "text/javascript" src= "javascript/app.js"></script>
+  </div>
+	<div id="countdown"></div>
+	<script src="javascript/data_songs.js"></script>
+	<script type= "text/javascript" src= "javascript/app.js"></script>
 </body>
 </html>
